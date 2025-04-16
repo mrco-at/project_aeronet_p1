@@ -11,21 +11,15 @@ import chardet
 import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+from pathlib import Path
 # %% Caminhos dos arquivos lev15
 # Defina os caminhos dos arquivos lev15
-# Aqui estão os caminhos dos arquivos lev15
-# que você forneceu, mas você pode alterá-los conforme necessário.
 file_paths = [
-    '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
-    'cpam_aerosol/dezembro/data/19990101_20241231_CEILAP-BA.lev15',
-    '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
-    'cpam_aerosol/dezembro/data/20000101_20241231_Rio_Branco.lev15',
-    '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
-    'cpam_aerosol/dezembro/data/20000101_20241231_Sao_Paulo.lev15',
-    '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
-    'cpam_aerosol/dezembro/data/20010101_20241231_CUIABA-MIRANDA.lev15',
-    '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
-    'cpam_aerosol/dezembro/data/20080101_20171231_Sao_Martinho_SONDA.lev15',
+    Path("data") / "19990101_20241231_CEILAP-BA.lev15",
+    Path("data") / "20000101_20241231_Rio_Branco.lev15",
+    Path("data") / "20000101_20241231_Sao_Paulo.lev15",
+    Path("data") / "20010101_20241231_CUIABA-MIRANDA.lev15",
+    Path("data") / "20080101_20171231_Sao_Martinho_SONDA.lev15"
 ]
 # %% FUNÇÃO detect_file_encoding para detectar a codificação dos arquivos
 def detect_file_encoding(file_path):
@@ -36,14 +30,11 @@ def detect_file_encoding(file_path):
 # %% FUNÇÃO preprocess_and_validate para pré-processar e validar o DataFrame
 def preprocess_and_validate(file_path):
     df = pd.read_csv(file_path)
-    
     # Verificar se a coluna 'Date(dd:mm:yyyy)' existe
     if 'Date(dd:mm:yyyy)' not in df.columns:
         raise ValueError("A coluna 'Date(dd:mm:yyyy)' está ausente no arquivo.")
-    
     # Substituir valores -999.000000 por NaN
     df.replace(-999.000000, np.nan, inplace=True)
-    
     return df
 
 # %% Processar múltiplos arquivos
@@ -167,7 +158,6 @@ for file_path, df in cleaned_dfs.items():
     print(df.describe())
     print("\n")
 
-
 # %% FUNÇÃO align_dataframes_by_date para alinhar os DataFrames
 def align_dataframes_by_date(dfs, date_column="Date(dd:mm:yyyy)", time_column="Time(hh:mm:ss)"):
     """
@@ -234,7 +224,6 @@ for file_path, df in aligned_dfs.items():
     print(f"{file_path}: {df.shape}")
     print(df.head())
 
-
 # %% Display .info() for each DataFrame in the `dfs` dictionary
 for file_path, df in aligned_dfs.items():
     print(f"Info for {file_path}:")
@@ -258,9 +247,9 @@ def plot_scatter_matrix(dataframes, numeric_columns_per_plot=4):
             subset_columns = numeric_columns[i:i + numeric_columns_per_plot]
             if len(subset_columns) > 1:
                 sns.pairplot(df, vars=subset_columns)
-                plt.suptitle(f"Scatterplot Matrix - {file_path[-25:-6]}\n{', '.join(subset_columns)}", y=1.02)
+                plt.suptitle(f"Scatterplot Matrix - {str(file_path)[-25:-6]}\n{', '.join(subset_columns)}", y=1.02)
                 plt.show()
-
+# %% FUNÇÃO plot_time_series para plotar gráficos de linha
 def plot_time_series(dataframes, date_column="Date(dd:mm:yyyy)", numeric_columns_per_plot=4):
     """
     Plota gráficos de linha para as séries temporais de cada coluna numérica.
@@ -272,22 +261,21 @@ def plot_time_series(dataframes, date_column="Date(dd:mm:yyyy)", numeric_columns
     """
     for file_path, df in dataframes.items():
         numeric_columns = df.select_dtypes(include=['float64', 'int64']).columns
-        print(f"Plotando gráficos de linha para {file_path[-25:-6]}...")
+        print(f"Plotando gráficos de linha para {str(file_path)[-25:-6]}...")
         
-        #for i in range(0, len(numeric_columns), numeric_columns_per_plot):
         for i in range(3, 7, numeric_columns_per_plot):
             subset_columns = numeric_columns[i:i + numeric_columns_per_plot]
             plt.figure(figsize=(12, 6))
             for col in subset_columns:
                 plt.plot(df[date_column], df[col], label=col)
-            plt.title(f"Séries Temporais - {file_path[-25:-6]}\n{', '.join(subset_columns)}")
+            plt.title(f"Séries Temporais - {str(file_path)[-25:-6]}\n{', '.join(subset_columns)}")
             plt.xlabel("Data")
             plt.ylabel("Valor")
             plt.legend()
             plt.tight_layout()
             plt.show()
 
-# Plotar scatterplot matrix e séries temporais para os DataFrames alinhados
+# %% Plotar scatterplot matrix e séries temporais para os DataFrames alinhados
 plot_scatter_matrix(aligned_dfs, numeric_columns_per_plot=4)
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)", numeric_columns_per_plot=4)
 # %% FUNÇÃO teste1 plot_time_series para plotar gráficos de linha
@@ -304,7 +292,7 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     y_max = 2.5
 
     for file_path, df in diction.items():
-        print(f"Plotando gráficos de linha para {file_path[-25:-6]}...")
+        print(f"Plotando gráficos de linha para {str(file_path)[-25:-6]}...")
 
         # Converte coluna de data, se necessário
         df[date_column] = pd.to_datetime(df[date_column], errors='coerce')
@@ -318,16 +306,15 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
 
         plt.xlim(x_min, x_max)
         plt.ylim(y_min, y_max)
-        plt.title(f"Temporal Series - AOD - {file_path[-25:-6]}")
+        plt.title(f"Temporal Series - AOD - {str(file_path)[-25:-6]}")
         plt.xlabel("Date")
         plt.ylabel("AOD")
 
         # Legenda fora da área do gráfico
         plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))  # fora à direita
         plt.tight_layout()
-        plt.savefig(f'temporal_series_{file_path[-25:-6]}.png',dpi=200)
+        plt.savefig(f'temporal_series_{str(file_path)[-25:-6]}.png',dpi=200)
         plt.show()
-#for name, x in aligned_dfs.items():
 # %% aplicando a função plot_time_series
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
 # %% FUNÇÃO teste2 plot_time_series
@@ -343,7 +330,7 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     y_max = 2.5
 
     for file_path, df in diction.items():
-        print(f"Plotando gráficos de linha para {file_path[-25:-6]}...")
+        print(f"Plotando gráficos de linha para {str(file_path)[-25:-6]}...")
 
         # Converte coluna de data, se necessário
         df[date_column] = pd.to_datetime(df[date_column], errors='coerce')
@@ -361,14 +348,14 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
 
         plt.xlim(x_min, x_max)
         plt.ylim(y_min, y_max)
-        plt.title(f"Temporal Series - AOD - {file_path[-25:-6]}")
+        plt.title(f"Temporal Series - AOD - {str(file_path)[-25:-6]}")
         plt.xlabel("Date")
         plt.ylabel("AOD")
 
         # Legenda fora da área do gráfico
         plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
         plt.tight_layout()
-        plt.savefig(f'temporal_series_{file_path[-25:-6]}.png', dpi=200)
+        plt.savefig(f'temporal_series_{str(file_path)[-25:-6]}.png', dpi=200)
         plt.show()
 # %% aplicando a função plot_time_series
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
@@ -377,7 +364,7 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     """
     Plota gráficos de dispersão para as séries temporais com eixos fixos.
     Eixo X: 2000 a 2024
-    Eixo Y: 0 a 2.5
+    Eixo Y: 0 a 2.2
     """
     x_min = pd.to_datetime("2000-01-01")
     x_max = pd.to_datetime("2024-12-31")
@@ -389,7 +376,7 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     marcadores = ['o', 's', 'D', '^', 'v', 'P', '*', 'X']
 
     for file_path, df in diction.items():
-        print(f"Plotando gráfico de dispersão para {file_path[-25:-6]}...")
+        print(f"Plotando gráfico de dispersão para {str(file_path)[-25:-6]}...")
 
         # Converte coluna de data, se necessário
         df[date_column] = pd.to_datetime(df[date_column], errors='coerce')
@@ -413,14 +400,15 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
 
         plt.xlim(x_min, x_max)
         plt.ylim(y_min, y_max)
-        plt.title(f"Time Series - AOD - {file_path[-25:-6]}")
+        plt.title(f"Time Series - AOD - {str(file_path)[-25:-6]}")
         plt.xlabel("Time")
         plt.ylabel("AOD")
 
         # Legenda fora da área do gráfico
         plt.legend(loc='center left', bbox_to_anchor=(1.0, 0.5))
         plt.tight_layout()
-        plt.savefig(f'temporal_series_{file_path[-25:-6]}.png', dpi=200)
+        plt.savefig(f'temporal_series_{str(file_path)[-25:-6]}.png', dpi=200)
         plt.show()
 # %% aplicando a função plot_time_series
+
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
