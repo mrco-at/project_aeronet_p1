@@ -34,7 +34,7 @@ def clean_dataframes(dfs, outlier_threshold=3):
             print(f"Cleaning DataFrame for: {file_path}")
 
             # Remove the first row (possible metadata)
-            df = df.iloc[1:].reset_index(drop=True)
+            df = df.iloc[5:].reset_index(drop=True)
 
             # Replace specific invalid values with NaN
             df.replace(-999, np.nan, inplace=True)
@@ -237,7 +237,7 @@ def generate_figures(data):
     
     # Código para gerar figuras
     # ...existing code for figure generation...
-
+#%%
 if __name__ == "__main__":
     # Exemplo de execução do script
     try:
@@ -262,7 +262,7 @@ if __name__ == "__main__":
                         file_path,
                         encoding=encoding,
                         sep=",",
-                        skiprows=6  # Ignorar as 6 primeiras linhas de metadados
+                        skiprows=5  # Ignorar as 6 primeiras linhas de metadados
                     )
 
                     # Listar as colunas do DataFrame
@@ -277,10 +277,8 @@ if __name__ == "__main__":
                 except Exception as e:
                     print(f"Erro ao carregar o arquivo '{file_path}': {e}")
                     continue
-
         # Limpar os DataFrames
         cleaned_dfs = clean_dataframes(dfs)
-
         # Alinhar os DataFrames por data
         aligned_dfs = align_dataframes_by_date(cleaned_dfs, date_column="Date(dd:mm:yyyy)")
 
@@ -288,12 +286,14 @@ if __name__ == "__main__":
         plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
 
         # Calcular estatísticas
-        for file_path, df in aligned_dfs.items():
-            stats = calculate_statistics({file_path: df}, date_column="Date(dd:mm:yyyy)")
-            print(f"Estatísticas para {file_path}: {stats}")
+        #for file_path, df in aligned_dfs.items():
+        #    stats = calculate_statistics({file_path: df}, date_column="Date(dd:mm:yyyy)")
+        #    print(f"Estatísticas para {file_path}: {stats}")
 
     except Exception as e:
         print(f"Erro ao executar o script: {e}")
 
 
 
+
+# %%
