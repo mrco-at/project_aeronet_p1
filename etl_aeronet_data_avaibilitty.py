@@ -1,78 +1,175 @@
+#--------------------------------------------------------------
+# %% importações
 import os
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
+import chardet
 
-# Diretórios dos níveis de qualidade
+#--------------------------------------------------------------
+# %% Diretórios dos níveis de qualidade
 data_dirs = {
     'lvl10': 'AOD_data_lvl10',
     'lvl15': 'AOD_data_lvl15',
     'lvl20': 'AOD_data_lvl20'
 }
 
-# Função para validar e limpar os dados
+#--------------------------------------------------------------
+# %% Função para validar e limpar os dados
 def validate_and_clean_data(file_path):
-    df = pd.read_csv(file_path)
-    
-    # Verificar se a coluna 'Date(dd:mm:yyyy)' existe
-    if 'Date(dd:mm:yyyy)' not in df.columns:
-        raise ValueError("A coluna 'Date(dd:mm:yyyy)' está ausente no arquivo.")
-    
-    # Substituir valores -999.000000 por NaN
-    df.replace(-999.000000, np.nan, inplace=True)
-    
-    return df
+    """
+    Validate and clean the data by handling encodings, skipping metadata rows, and ensuring required columns exist.
+    """
+    try:
+        # Detect encoding
+        with open(file_path, 'rb') as f:
+            raw_data = f.read(10000)
+            encoding = chardet.detect(raw_data)['encoding']
 
-# Função para processar os dados de um diretório
+        # Log encoding detection
+        print(f"Processando arquivo: {file_path} | Codificação detectada: {encoding}")
+
+        # Check if the file has only one line (no data available)
+        with open(file_path, 'r', encoding=encoding if encoding else 'utf-8') as f:
+            lines = f.readlines()
+            if len(lines) <= 1:
+                print(f"Arquivo ignorado (sem dados): {file_path}")
+                return None
+
+        # Load the data with fixed separator and correct header row
+        df = pd.read_csv(
+            file_path,
+            encoding=encoding if encoding else 'utf-8',  # Use utf-8 as fallback
+            sep=",",  # Assuming comma as the separator
+            header=5,  # Correct header row (6th line, index 5)
+            low_memory=False  # Avoid dtype warnings for large files
+        )
+
+        # Check if the file contains data
+        if df.empty:
+            raise ValueError(f"O arquivo {file_path} está vazio ou não contém dados válidos.")
+
+        # Log the first few rows for debugging
+        print(f"Primeiras linhas do arquivo {file_path}:\n{df.head()}")
+
+        # Check if the required columns exist
+        required_columns = ['Date(dd:mm:yyyy)', 'AOD_500nm']
+        for col in required_columns:
+            if col not in df.columns:
+                raise ValueError(f"A coluna '{col}' está ausente no arquivo {file_path}.")
+
+        # Replace invalid values with NaN
+        df.replace(-999.000000, np.nan, inplace=True)
+
+        return df
+    except Exception as e:
+        raise ValueError(f"Erro ao processar o arquivo {file_path}: {e}")
+
+#--------------------------------------------------------------
+# %% Função para processar os dados de um diretório
 def process_aeronet_data(data_dir):
+    """
+    Process all files in a directory, validate and clean them, and compute data availability.
+    """
     results = []
+    all_cities_data = []  # Store data for all cities
+    error_log = []  # Log errors for debugging
+    frequency_distributions = {}  # Store frequency distributions for each city
 
     for city_file in os.listdir(data_dir):
         city_path = os.path.join(data_dir, city_file)
         if city_file.endswith('.txt'):
-            # Carregar os dados
             try:
+                # Validate and clean the data
                 data = validate_and_clean_data(city_path)
-                data['Date'] = pd.to_datetime(data['Date(dd:mm:yyyy)'], errors='coerce')
+                if data is None:  # Skip files with no data
+                    continue
+
+                data['Date'] = pd.to_datetime(data['Date(dd:mm:yyyy)'], format='%d:%m:%Y', errors='coerce')
+
+                # Filter data within the period 1995-2024
+                data = data[(data['Date'] >= '1995-01-01') & (data['Date'] <= '2024-12-31')]
+
+                # Group by date and count valid measurements per day
+                daily_counts = data.groupby('Date')['AOD_500nm'].apply(lambda x: x.dropna().count())
+
+                # Define a day as valid if it has at least 30% of 24 measurements (i.e., 8 measurements)
+                valid_days = daily_counts[daily_counts >= 8].index
+
+                # Calculate the total number of days in the period
+                total_days = (datetime(2024, 12, 31) - datetime(1995, 1, 1)).days + 1
+
+                # Calculate the percentage of valid days
+                valid_days_percentage = (len(valid_days) / total_days) * 100
+
+                # Store data for all cities
+                all_cities_data.append({
+                    'city': city_file.replace('.txt', ''),
+                    'valid_days_count': len(valid_days),
+                    'valid_days_percentage': valid_days_percentage
+                })
+
+                # Store frequency distribution of valid measurements per day
+                frequency_distributions[city_file.replace('.txt', '')] = daily_counts.value_counts().sort_index()
+
+                # Check if the station has at least 30% of valid days
+                if valid_days_percentage >= 30:
+                    results.append({
+                        'city': city_file.replace('.txt', ''),
+                        'valid_days_count': len(valid_days),
+                        'valid_days_percentage': valid_days_percentage
+                    })
             except Exception as e:
-                print(f"Erro ao processar o arquivo {city_file}: {e}")
-                continue
+                error_log.append(f"{city_file}: {e}")
 
-            # Contar dados válidos e vazios
-            valid_data_count = data.dropna().shape[0]
-            empty_data_count = data.shape[0] - valid_data_count
+    # Display error log
+    if error_log:
+        print("\nLog de erros:")
+        for error in error_log:
+            print(error)
 
-            # Identificar períodos longos de ausência de dados (>= 1 ano)
-            data = data.sort_values(by='Date')
-            data['Gap'] = data['Date'].diff().dt.days
-            long_gaps = data[data['Gap'] >= 365].shape[0]
+    return results, all_cities_data, frequency_distributions
 
-            # Estatísticas descritivas
-            stats = data.describe().to_dict()
-
-            # Adicionar resultados
-            results.append({
-                'city': city_file.replace('.txt', ''),
-                'valid_data_count': valid_data_count,
-                'empty_data_count': empty_data_count,
-                'long_gaps': long_gaps,
-                'stats': stats
-            })
-
-    return results
-
-# Processar os dados para cada nível de qualidade
+#--------------------------------------------------------------
+# %% Processar os dados para cada nível de qualidade
 final_results = {}
+all_cities_results = {}
+frequency_distributions_results = {}
 for level, directory in data_dirs.items():
     if os.path.exists(directory):
-        final_results[level] = process_aeronet_data(directory)
+        print(f"\nProcessando dados para o nível: {level}")
+        results, all_cities_data, frequency_distributions = process_aeronet_data(directory)
+        final_results[level] = results
+        all_cities_results[level] = all_cities_data
+        frequency_distributions_results[level] = frequency_distributions
 
 # Exibir os resultados
 for level, results in final_results.items():
     print(f"\nResultados para {level}:")
-    for result in results:
-        print(f"Cidade: {result['city']}")
-        print(f"  Dados válidos: {result['valid_data_count']}")
-        print(f"  Dados vazios: {result['empty_data_count']}")
-        print(f"  Períodos longos de ausência: {result['long_gaps']}")
-        print(f"  Estatísticas descritivas: {result['stats']}")
+    if results:
+        for result in results:
+            print(f"Cidade: {result['city']}")
+            print(f"  Dias válidos: {result['valid_days_count']}")
+            print(f"  Percentual de dias válidos: {result['valid_days_percentage']:.2f}%")
+    else:
+        print("Nenhuma cidade atendeu ao critério de disponibilidade.")
+
+# Exibir os dados de todas as cidades
+print("\nResumo de todas as cidades (independente do critério):")
+for level, cities_data in all_cities_results.items():
+    print(f"\nDados para {level}:")
+    for city_data in cities_data:
+        print(f"Cidade: {city_data['city']}")
+        print(f"  Dias válidos: {city_data['valid_days_count']}")
+        print(f"  Percentual de dias válidos: {city_data['valid_days_percentage']:.2f}%")
+
+# Exibir a distribuição de frequência de valores válidos por dia
+print("\nDistribuição de frequência de valores válidos por dia:")
+for level, distributions in frequency_distributions_results.items():
+    print(f"\nDistribuições para {level}:")
+    for city, distribution in distributions.items():
+        print(f"Cidade: {city}")
+        print(distribution)
+
+#--------------------------------------------------------------
+# %% FIM

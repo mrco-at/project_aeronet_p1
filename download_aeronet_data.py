@@ -18,7 +18,8 @@ import time  # Import time for adding delays
 import pandas as pd
 import numpy as np
 
-def download_aeronet_aod(site, start_date, end_date, data_type, data_format, aod_level, download_folder):
+def download_aeronet_aod(site, start_date, end_date, data_type,
+                          data_format, aod_level, download_folder):
    
     # Ensure the download folder exists
     if not os.path.exists(download_folder):
