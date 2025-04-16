@@ -1,18 +1,20 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Dec  9 19:25:33 2024
-
 @author: mgodi
 """
-
-#%%
+# %% importando bibliotecas
 import pandas as pd
 from collections import Counter
-import matplotlib.pyplot as plt
 import numpy as np
 import chardet
-#%%
-# Caminho do arquivo
+import seaborn as sns
+import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+# %% Caminhos dos arquivos lev15
+# Defina os caminhos dos arquivos lev15
+# Aqui estão os caminhos dos arquivos lev15
+# que você forneceu, mas você pode alterá-los conforme necessário.
 file_paths = [
     '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
     'cpam_aerosol/dezembro/data/19990101_20241231_CEILAP-BA.lev15',
@@ -25,15 +27,13 @@ file_paths = [
     '/home/mgodi/Documentos/inbox_acad/colaboracoes_pessoas/marinete/'
     'cpam_aerosol/dezembro/data/20080101_20171231_Sao_Martinho_SONDA.lev15',
 ]
-#%%
-# Função para detectar a codificação de um arquivo
+# %% FUNÇÃO detect_file_encoding para detectar a codificação dos arquivos
 def detect_file_encoding(file_path):
     with open(file_path, 'rb') as f:
         raw_data = f.read()
         result = chardet.detect(raw_data)
         return result['encoding']
-
-# Função para pré-processar e validar o DataFrame
+# %% FUNÇÃO preprocess_and_validate para pré-processar e validar o DataFrame
 def preprocess_and_validate(file_path):
     df = pd.read_csv(file_path)
     
@@ -46,7 +46,7 @@ def preprocess_and_validate(file_path):
     
     return df
 
-# Processar múltiplos arquivos
+# %% Processar múltiplos arquivos
 dfs = {}
 problematic_files = []
 
@@ -105,13 +105,12 @@ for file_path in file_paths:
         problematic_files.append(file_path)
 
 print(f"Arquivos com problemas: {problematic_files}")
-#%%
-# Display .info() for each DataFrame in the `dfs` dictionary
+# %% Display .info() for each DataFrame in the `dfs` dictionary
 for file_path, df in dfs.items():
     print(f"Info for {file_path}:")
     df.info()
     print("\n" + "="*50 + "\n")
-#%%
+# %% FUNÇÃO clean_dataframes para limpar os DataFrames
 def clean_dataframes(dfs, outlier_threshold=3):
     """
     Limpa os DataFrames de um dicionário substituindo valores nulos/outliers, removendo colunas vazias
@@ -160,17 +159,16 @@ def clean_dataframes(dfs, outlier_threshold=3):
         
     return cleaned_dfs
 
-# Aplicar a limpeza nos DataFrames
+# %% Aplicar a limpeza nos DataFrames
 cleaned_dfs = clean_dataframes(dfs)
-
-# Visualizar as estatísticas de cada DataFrame limpo
+# %% Visualizar as estatísticas de cada DataFrame limpo
 for file_path, df in cleaned_dfs.items():
     print(f"Estatísticas após limpeza para {file_path}:")
     print(df.describe())
     print("\n")
 
 
-#%%
+# %% FUNÇÃO align_dataframes_by_date para alinhar os DataFrames
 def align_dataframes_by_date(dfs, date_column="Date(dd:mm:yyyy)", time_column="Time(hh:mm:ss)"):
     """
     Alinha todos os DataFrames para garantir que tenham uma linha para cada dia
@@ -228,25 +226,21 @@ def align_dataframes_by_date(dfs, date_column="Date(dd:mm:yyyy)", time_column="T
     
     return aligned_dfs
 
-# Aplicar o alinhamento
+# %% Aplicar o alinhamento
 aligned_dfs = align_dataframes_by_date(cleaned_dfs)
 
-# Verificar as dimensões e amostras após o alinhamento
+# %% Verificar as dimensões e amostras após o alinhamento
 for file_path, df in aligned_dfs.items():
     print(f"{file_path}: {df.shape}")
     print(df.head())
 
 
-#%%
-# Display .info() for each DataFrame in the `dfs` dictionary
+# %% Display .info() for each DataFrame in the `dfs` dictionary
 for file_path, df in aligned_dfs.items():
     print(f"Info for {file_path}:")
     df.info()
     print("\n" + "="*50 + "\n")
-#%%
-import seaborn as sns
-import matplotlib.pyplot as plt
-
+# %% FUNÇÃO plot_scatter_matrix para plotar gráficos de dispersão
 def plot_scatter_matrix(dataframes, numeric_columns_per_plot=4):
     """
     Plota gráficos de dispersão em uma matriz scatterplot dividida em grupos de colunas numéricas.
@@ -296,10 +290,7 @@ def plot_time_series(dataframes, date_column="Date(dd:mm:yyyy)", numeric_columns
 # Plotar scatterplot matrix e séries temporais para os DataFrames alinhados
 plot_scatter_matrix(aligned_dfs, numeric_columns_per_plot=4)
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)", numeric_columns_per_plot=4)
-#%% teste
-import matplotlib.pyplot as plt
-import pandas as pd
-
+# %% FUNÇÃO teste1 plot_time_series para plotar gráficos de linha
 def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     """
     Plota gráficos de linha para as séries temporais com eixos fixos.
@@ -337,12 +328,9 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
         plt.savefig(f'temporal_series_{file_path[-25:-6]}.png',dpi=200)
         plt.show()
 #for name, x in aligned_dfs.items():
+# %% aplicando a função plot_time_series
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
-#%%
-import pandas as pd
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-
+# %% FUNÇÃO teste2 plot_time_series
 def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     """
     Plota gráficos de dispersão para as séries temporais com eixos fixos.
@@ -382,11 +370,9 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
         plt.tight_layout()
         plt.savefig(f'temporal_series_{file_path[-25:-6]}.png', dpi=200)
         plt.show()
+# %% aplicando a função plot_time_series
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
-#%%
-import pandas as pd
-import matplotlib.pyplot as plt
-
+# %% FUNÇÃO teste3 plot_time_series
 def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
     """
     Plota gráficos de dispersão para as séries temporais com eixos fixos.
@@ -436,5 +422,5 @@ def plot_time_series(diction, date_column="Date(dd:mm:yyyy)"):
         plt.tight_layout()
         plt.savefig(f'temporal_series_{file_path[-25:-6]}.png', dpi=200)
         plt.show()
-
+# %% aplicando a função plot_time_series
 plot_time_series(aligned_dfs, date_column="Date(dd:mm:yyyy)")
