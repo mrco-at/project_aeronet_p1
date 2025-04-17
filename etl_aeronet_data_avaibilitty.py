@@ -221,4 +221,83 @@ for level, distributions in frequency_distributions_results.items():
         print(f"Boxplot acumulado salvo em: {os.path.join(output_dir, f'{level}_cumulative_boxplot.png')}")
 
 #--------------------------------------------------------------
+# %% Análise considerando o universo total de dias com medidas válidas
+print("\nAnálise do universo total de dias com medidas válidas:")
+representative_days_results = {}
+for level, distributions in frequency_distributions_results.items():
+    print(f"\nAnálise para {level}:")
+    level_representative_days = []  # Acumular dados de dias representativos para o nível
+    level_representative_percentages = []  # Acumular percentuais de dias representativos para o nível
+    for city, distribution in distributions.items():
+        # Calcular o segundo quartil (mediana) da frequência de dados válidos diários
+        second_quartil = pd.Series(distribution.index.repeat(distribution.values)).quantile(0.5)
+        print(f"Cidade: {city} | Segundo quartil: {second_quartil}")
+
+        # Determinar dias representativos (frequência >= segundo quartil)
+        representative_days = distribution[distribution.index >= second_quartil].sum()
+        total_days = (datetime(2024, 12, 31) - datetime(1995, 1, 1)).days + 1
+        representative_days_percentage = (representative_days / total_days) * 100
+
+        print(f"  Dias representativos: {representative_days}")
+        print(f"  Percentual de dias representativos: {representative_days_percentage:.2f}%")
+
+        # Adicionar dados para o gráfico de barras e boxplot
+        level_representative_days.append(representative_days)
+        level_representative_percentages.append(representative_days_percentage)
+
+        # Gerar gráfico de barras com dois eixos Y
+        fig, ax1 = plt.subplots(figsize=(8, 5))
+
+        # Eixo Y para valores absolutos
+        ax1.bar(["Dias Representativos"], [representative_days], color='orange', edgecolor='black', label="Absoluto")
+        ax1.set_ylabel("Dias Representativos (Absoluto)", fontsize=12, color='orange')
+        ax1.tick_params(axis='y', labelcolor='orange')
+
+        # Eixo Y secundário para percentuais
+        ax2 = ax1.twinx()
+        ax2.bar(["Dias Representativos (%)"], [representative_days_percentage], color='blue', edgecolor='black', label="Percentual")
+        ax2.set_ylabel("Dias Representativos (%)", fontsize=12, color='blue')
+        ax2.tick_params(axis='y', labelcolor='blue')
+
+        # Título e layout
+        plt.title(f"Dias Representativos - {city} ({level})", fontsize=14)
+        fig.tight_layout()
+
+        # Salvar o gráfico como imagem
+        output_dir = "representative_days_plots"
+        os.makedirs(output_dir, exist_ok=True)
+        plt.savefig(os.path.join(output_dir, f"{city}_{level}_representative_days_dual_axis_bar.png"))
+        plt.close()
+
+        print(f"Gráfico de barras com dois eixos Y salvo em: {os.path.join(output_dir, f'{city}_{level}_representative_days_dual_axis_bar.png')}")
+
+    # Gerar boxplot acumulado para o nível (dias representativos absolutos)
+    if level_representative_days:
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(level_representative_days, vert=False, patch_artist=True, boxprops=dict(facecolor='lightcoral'))
+        plt.title(f"Boxplot de Dias Representativos (Absoluto) - {level}", fontsize=14)
+        plt.xlabel("Número de Dias Representativos", fontsize=12)
+        plt.tight_layout()
+
+        # Salvar o boxplot acumulado como imagem
+        plt.savefig(os.path.join(output_dir, f"{level}_representative_days_boxplot_absolute.png"))
+        plt.close()
+
+        print(f"Boxplot acumulado (absoluto) salvo em: {os.path.join(output_dir, f'{level}_representative_days_boxplot_absolute.png')}")
+
+    # Gerar boxplot acumulado para o nível (percentuais de dias representativos)
+    if level_representative_percentages:
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(level_representative_percentages, vert=False, patch_artist=True, boxprops=dict(facecolor='lightgreen'))
+        plt.title(f"Boxplot de Dias Representativos (%) - {level}", fontsize=14)
+        plt.xlabel("Percentual de Dias Representativos", fontsize=12)
+        plt.tight_layout()
+
+        # Salvar o boxplot acumulado como imagem
+        plt.savefig(os.path.join(output_dir, f"{level}_representative_days_boxplot_percentage.png"))
+        plt.close()
+
+        print(f"Boxplot acumulado (%) salvo em: {os.path.join(output_dir, f'{level}_representative_days_boxplot_percentage.png')}")
+
+#--------------------------------------------------------------
 # %% FIM
