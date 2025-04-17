@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import chardet
+import matplotlib.pyplot as plt  # Importar biblioteca para gráficos
 
 #--------------------------------------------------------------
 # %% Diretórios dos níveis de qualidade
@@ -170,6 +171,23 @@ for level, distributions in frequency_distributions_results.items():
     for city, distribution in distributions.items():
         print(f"Cidade: {city}")
         print(distribution)
+
+        # Gerar gráfico para a distribuição de frequência
+        plt.figure(figsize=(10, 6))
+        distribution.plot(kind='bar', color='skyblue', edgecolor='black')
+        plt.title(f"Distribuição de Frequência - {city} ({level})", fontsize=14)
+        plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
+        plt.ylabel("Frequência", fontsize=12)
+        plt.grid(axis='y', linestyle='--', alpha=0.7)
+        plt.tight_layout()
+
+        # Salvar o gráfico como imagem
+        output_dir = "frequency_distribution_plots"
+        os.makedirs(output_dir, exist_ok=True)
+        plt.savefig(os.path.join(output_dir, f"{city}_{level}_frequency_distribution.png"))
+        plt.close()
+
+        print(f"Gráfico salvo em: {os.path.join(output_dir, f'{city}_{level}_frequency_distribution.png')}")
 
 #--------------------------------------------------------------
 # %% FIM
