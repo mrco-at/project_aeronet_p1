@@ -176,7 +176,8 @@ for level, distributions in frequency_distributions_results.items():
         # Gerar gráfico para a distribuição de frequência
         plt.figure(figsize=(10, 6))
         distribution.plot(kind='bar', color='skyblue', edgecolor='black')
-        plt.title(f"Distribuição de Frequência - {city} ({level})", fontsize=14)
+        title = f"Distribuição de Frequência - {city} ({level})"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
         plt.ylabel("Frequência", fontsize=12)
         plt.grid(axis='y', linestyle='--', alpha=0.7)
@@ -196,7 +197,8 @@ for level, distributions in frequency_distributions_results.items():
         # Gerar boxplot para a cidade
         plt.figure(figsize=(8, 5))
         plt.boxplot(distribution.index.repeat(distribution.values), vert=False, patch_artist=True, boxprops=dict(facecolor='lightblue'))
-        plt.title(f"Boxplot - {city} ({level})", fontsize=14)
+        title = f"Boxplot - {city} ({level})"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
         plt.tight_layout()
 
@@ -210,7 +212,8 @@ for level, distributions in frequency_distributions_results.items():
     if level_data:
         plt.figure(figsize=(8, 5))
         plt.boxplot(level_data, vert=False, patch_artist=True, boxprops=dict(facecolor='lightgreen'))
-        plt.title(f"Boxplot Acumulado - {level}", fontsize=14)
+        title = f"Boxplot Acumulado - {level}"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
         plt.tight_layout()
 
@@ -259,8 +262,9 @@ for level, distributions in frequency_distributions_results.items():
         ax2.set_ylabel("Dias Representativos (%)", fontsize=12, color='blue')
         ax2.tick_params(axis='y', labelcolor='blue')
 
-        # Título e layout
-        plt.title(f"Dias Representativos - {city} ({level})", fontsize=14)
+        # Ajustar título para evitar cortes
+        title = f"Dias Representativos - {city} ({level})"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         fig.tight_layout()
 
         # Salvar o gráfico como imagem
@@ -275,7 +279,8 @@ for level, distributions in frequency_distributions_results.items():
     if level_representative_days:
         plt.figure(figsize=(8, 5))
         plt.boxplot(level_representative_days, vert=False, patch_artist=True, boxprops=dict(facecolor='lightcoral'))
-        plt.title(f"Boxplot de Dias Representativos (Absoluto) - {level}", fontsize=14)
+        title = f"Boxplot de Dias Representativos (Absoluto) - {level}"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         plt.xlabel("Número de Dias Representativos", fontsize=12)
         plt.tight_layout()
 
@@ -289,7 +294,8 @@ for level, distributions in frequency_distributions_results.items():
     if level_representative_percentages:
         plt.figure(figsize=(8, 5))
         plt.boxplot(level_representative_percentages, vert=False, patch_artist=True, boxprops=dict(facecolor='lightgreen'))
-        plt.title(f"Boxplot de Dias Representativos (%) - {level}", fontsize=14)
+        title = f"Boxplot de Dias Representativos (%) - {level}"
+        plt.title("\n".join(title.split(" - ")), fontsize=14)  # Quebra o título em múltiplas linhas
         plt.xlabel("Percentual de Dias Representativos", fontsize=12)
         plt.tight_layout()
 
