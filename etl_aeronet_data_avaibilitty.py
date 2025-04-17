@@ -168,6 +168,7 @@ for level, cities_data in all_cities_results.items():
 print("\nDistribuição de frequência de valores válidos por dia:")
 for level, distributions in frequency_distributions_results.items():
     print(f"\nDistribuições para {level}:")
+    level_data = []  # Acumular dados de todas as cidades para o nível
     for city, distribution in distributions.items():
         print(f"Cidade: {city}")
         print(distribution)
@@ -188,6 +189,36 @@ for level, distributions in frequency_distributions_results.items():
         plt.close()
 
         print(f"Gráfico salvo em: {os.path.join(output_dir, f'{city}_{level}_frequency_distribution.png')}")
+
+        # Adicionar dados para o boxplot da cidade
+        level_data.extend(distribution.index.repeat(distribution.values))
+
+        # Gerar boxplot para a cidade
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(distribution.index.repeat(distribution.values), vert=False, patch_artist=True, boxprops=dict(facecolor='lightblue'))
+        plt.title(f"Boxplot - {city} ({level})", fontsize=14)
+        plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
+        plt.tight_layout()
+
+        # Salvar o boxplot como imagem
+        plt.savefig(os.path.join(output_dir, f"{city}_{level}_boxplot.png"))
+        plt.close()
+
+        print(f"Boxplot salvo em: {os.path.join(output_dir, f'{city}_{level}_boxplot.png')}")
+
+    # Gerar boxplot acumulado para o nível
+    if level_data:
+        plt.figure(figsize=(8, 5))
+        plt.boxplot(level_data, vert=False, patch_artist=True, boxprops=dict(facecolor='lightgreen'))
+        plt.title(f"Boxplot Acumulado - {level}", fontsize=14)
+        plt.xlabel("Número de Medições Válidas por Dia", fontsize=12)
+        plt.tight_layout()
+
+        # Salvar o boxplot acumulado como imagem
+        plt.savefig(os.path.join(output_dir, f"{level}_cumulative_boxplot.png"))
+        plt.close()
+
+        print(f"Boxplot acumulado salvo em: {os.path.join(output_dir, f'{level}_cumulative_boxplot.png')}")
 
 #--------------------------------------------------------------
 # %% FIM
