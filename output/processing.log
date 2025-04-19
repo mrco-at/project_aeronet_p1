@@ -785,3 +785,11 @@ ValueError: Dimensions of labels and X must be compatible
 2025-04-19 01:17:42,796 - data_processor - ERROR - Error processing file AOD_data_lvl10/Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
 2025-04-19 01:17:47,513 - data_processor - ERROR - Error processing file AOD_data_lvl10/SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
 2025-04-19 01:17:47,723 - data_processor - ERROR - Error processing file AOD_data_lvl10/Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:57,060 - data_processor - ERROR - Error processing file AOD_data_lvl10/Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:18:00,346 - data_processor - ERROR - Error processing file AOD_data_lvl10/Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:18:00,714 - data_processor - ERROR - Error processing file AOD_data_lvl10/Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:18:00,720 - data_processor - WARNING - Error reading file with utf-8 encoding: No columns to parse from file
+2025-04-19 01:18:00,721 - data_processor - WARNING - Error reading file with latin1 encoding: No columns to parse from file
+2025-04-19 01:18:00,722 - data_processor - WARNING - Error reading file with iso-8859-1 encoding: No columns to parse from file
+2025-04-19 01:18:00,722 - data_processor - ERROR - Error processing file AOD_data_lvl10/Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: Could not read file with any encoding: AOD_data_lvl10/Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 01:18:00,783 - data_processor - ERROR - Error processing file AOD_data_lvl10/Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
