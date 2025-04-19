@@ -6,7 +6,7 @@ from datetime import datetime
 
 # Directory paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(BASE_DIR, 'data')
+DATA_DIR = BASE_DIR  # Changed from os.path.join(BASE_DIR, 'data') to BASE_DIR
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
 GEOS_DIR = os.path.join(BASE_DIR, 'geos')
 

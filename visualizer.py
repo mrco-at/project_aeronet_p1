@@ -3,7 +3,6 @@ Visualization module for AERONET data analysis.
 """
 import os
 import matplotlib.pyplot as plt
-import seaborn as sns
 from typing import Dict, List, Any, Tuple
 import pandas as pd
 import numpy as np
@@ -20,15 +19,19 @@ class AeronetVisualizer:
     
     def __init__(self, output_dir: str = 'output'):
         """
-        Initialize the visualizer.
+        Initialize the visualizer with output directory.
         
         Args:
             output_dir: Directory to save output files
         """
         self.output_dir = output_dir
         os.makedirs(output_dir, exist_ok=True)
-        plt.style.use('default')  # Use default style instead of seaborn
+        
+        # Configure logging
         self.logger = logging.getLogger(__name__)
+        
+        # Set matplotlib style
+        plt.style.use('default')  # Use default matplotlib style
 
     def plot_frequency_distribution(self, city: str, distribution: pd.Series, level: str) -> str:
         """
@@ -149,12 +152,24 @@ class AeronetVisualizer:
             
             # Create plot
             plt.figure(figsize=(12, 6))
-            sns.barplot(data=df, x='Station', y='Availability (%)', hue='Level')
+            
+            # Get unique levels and create a bar for each
+            levels = df['Level'].unique()
+            bar_width = 0.8 / len(levels)
+            
+            for i, level in enumerate(levels):
+                level_data = df[df['Level'] == level]
+                x = np.arange(len(level_data))
+                plt.bar(x + i * bar_width, level_data['Availability (%)'], 
+                       width=bar_width, label=level)
+            
             plt.title('Station Availability Comparison')
             plt.xlabel('Station')
             plt.ylabel('Availability (%)')
-            plt.xticks(rotation=45, ha='right')
+            plt.xticks(range(len(df['Station'].unique())), df['Station'].unique(), 
+                      rotation=45, ha='right')
             plt.legend(title='Quality Level')
+            plt.grid(True, axis='y', linestyle='--', alpha=0.7)
             plt.tight_layout()
             
             # Save plot
