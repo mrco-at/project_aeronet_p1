@@ -1,0 +1,200 @@
+2025-04-19 00:24:19,250 - INFO - Processando dados AERONET...
+2025-04-19 00:24:19,250 - INFO - Processando JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:19,273 - INFO - Processando Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:19,273 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:19,273 - INFO - Processando Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:20,836 - INFO - Processando Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:26,739 - INFO - Processando Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:28,595 - INFO - Processando Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:28,627 - INFO - Processando Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:28,985 - INFO - Processando Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:29,043 - INFO - Processando Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:29,080 - INFO - Processando Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:29,121 - INFO - Processando Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:33,685 - INFO - Processando Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:33,763 - INFO - Processando Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,490 - INFO - Processando Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,552 - INFO - Processando Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,574 - INFO - Processando Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,574 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,575 - INFO - Processando Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,575 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:34,575 - INFO - Processando Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:36,717 - INFO - Processando Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:36,763 - INFO - Processando SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:36,763 - ERROR - Erro ao ler arquivo AOD_data_lvl10/SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 179: invalid continuation byte
+2025-04-19 00:24:36,763 - INFO - Processando Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:36,796 - INFO - Processando Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:38,875 - INFO - Processando Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,712 - INFO - Processando Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,817 - INFO - Processando Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,818 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,818 - INFO - Processando Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,833 - INFO - Processando CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,834 - ERROR - Erro ao ler arquivo AOD_data_lvl10/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 197: invalid continuation byte
+2025-04-19 00:24:39,834 - INFO - Processando Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,845 - INFO - Processando CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:39,857 - INFO - Processando Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:41,458 - INFO - Processando Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:41,647 - INFO - Processando Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:41,750 - INFO - Processando Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:41,765 - INFO - Processando Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:42,579 - INFO - Processando Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:42,825 - INFO - Processando Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:42,840 - INFO - Processando Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:43,732 - INFO - Processando Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:43,820 - INFO - Processando JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:43,838 - INFO - Processando Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:43,861 - INFO - Processando GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:43,875 - INFO - Processando Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,206 - INFO - Processando ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,434 - INFO - Processando Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,681 - INFO - Processando Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,696 - INFO - Processando Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,696 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,696 - INFO - Processando Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,731 - INFO - Processando Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,732 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl10/Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,732 - INFO - Processando Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,745 - INFO - Processando Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:47,755 - INFO - Processando ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:48,480 - INFO - Processando Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:48,534 - INFO - Processando Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:50,471 - INFO - Processando Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 00:24:51,400 - INFO - Processando Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:51,863 - INFO - Processando Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:51,864 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:51,864 - INFO - Processando Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:52,080 - INFO - Processando Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:52,517 - INFO - Processando GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:52,526 - INFO - Processando CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:52,526 - ERROR - Erro ao ler arquivo AOD_data_lvl15/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 274: invalid continuation byte
+2025-04-19 00:24:52,526 - INFO - Processando Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:53,906 - INFO - Processando Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:53,927 - INFO - Processando Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:54,022 - INFO - Processando Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:56,068 - INFO - Processando Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:56,068 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:56,068 - INFO - Processando ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,137 - INFO - Processando Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,137 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,137 - INFO - Processando Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,170 - INFO - Processando Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,584 - INFO - Processando Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:24:58,595 - INFO - Processando Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:00,084 - INFO - Processando Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:01,487 - INFO - Processando Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:01,532 - INFO - Processando Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,354 - INFO - Processando Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,402 - INFO - Processando Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,415 - INFO - Processando Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,423 - INFO - Processando SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,423 - ERROR - Erro ao ler arquivo AOD_data_lvl15/SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 256: invalid continuation byte
+2025-04-19 00:25:03,423 - INFO - Processando Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,458 - INFO - Processando Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,465 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,466 - INFO - Processando Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,477 - INFO - Processando ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,581 - INFO - Processando Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,911 - INFO - Processando Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:03,924 - INFO - Processando Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:06,729 - INFO - Processando Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:06,793 - INFO - Processando Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,104 - INFO - Processando Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,118 - INFO - Processando Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,119 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,119 - INFO - Processando Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,193 - INFO - Processando Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,195 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,195 - INFO - Processando Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,320 - INFO - Processando Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,341 - INFO - Processando Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,362 - INFO - Processando Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,375 - INFO - Processando Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,552 - INFO - Processando JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,567 - INFO - Processando Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,592 - INFO - Processando Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,593 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,593 - INFO - Processando Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:08,666 - INFO - Processando Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:09,436 - INFO - Processando Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:10,868 - INFO - Processando Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:10,948 - INFO - Processando Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:10,988 - INFO - Processando Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:11,071 - INFO - Processando JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:11,072 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl15/JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:11,073 - INFO - Processando CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:11,160 - INFO - Processando Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt
+2025-04-19 00:25:11,465 - INFO - Processando Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,528 - INFO - Processando CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,528 - ERROR - Erro ao ler arquivo AOD_data_lvl20/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 241: invalid continuation byte
+2025-04-19 00:25:12,529 - INFO - Processando SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,529 - ERROR - Erro ao ler arquivo AOD_data_lvl20/SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 223: invalid continuation byte
+2025-04-19 00:25:12,529 - INFO - Processando Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,529 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,529 - INFO - Processando Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,561 - INFO - Processando Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,772 - INFO - Processando Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,797 - INFO - Processando JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,813 - INFO - Processando Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,839 - INFO - Processando Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,839 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,840 - INFO - Processando CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:12,856 - INFO - Processando Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:14,812 - INFO - Processando ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:14,996 - INFO - Processando Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,510 - INFO - Processando GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,519 - INFO - Processando Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,534 - INFO - Processando Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,534 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,534 - INFO - Processando Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,693 - INFO - Processando Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,793 - INFO - Processando Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,811 - INFO - Processando Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,838 - INFO - Processando Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,865 - INFO - Processando Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,880 - INFO - Processando Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:16,948 - INFO - Processando Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,101 - INFO - Processando Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,538 - INFO - Processando Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,565 - INFO - Processando Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,566 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,566 - INFO - Processando Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,566 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:17,566 - INFO - Processando Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,567 - INFO - Processando JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,568 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,568 - INFO - Processando Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,842 - INFO - Processando Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,842 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,843 - INFO - Processando Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,858 - INFO - Processando Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:18,871 - INFO - Processando Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:19,080 - INFO - Processando Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:19,116 - INFO - Processando Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:19,432 - INFO - Processando Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:19,444 - INFO - Processando Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:20,311 - INFO - Processando Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:20,374 - INFO - Processando Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:21,372 - INFO - Processando Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:21,372 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:21,372 - INFO - Processando Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:21,391 - INFO - Processando Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:22,542 - INFO - Processando Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,569 - INFO - Processando ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,651 - INFO - Processando Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,744 - INFO - Processando Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,788 - INFO - Processando Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,788 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:23,789 - INFO - Processando Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:24,214 - INFO - Processando Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:24,266 - INFO - Processando Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:24,266 - WARNING - Linha de cabeçalho não encontrada em AOD_data_lvl20/Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:24,266 - INFO - Processando Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt
+2025-04-19 00:25:24,275 - INFO - Gerando visualizações...
+2025-04-19 00:25:24,685 - INFO - Gráfico de comparação salvo em: output/availability_comparison.png
+2025-04-19 00:25:25,044 - INFO - Gráfico de disponibilidade por estação para level10 salvo em: output/station_availability_level10.png
+2025-04-19 00:25:25,386 - INFO - Gráfico de disponibilidade por estação para level15 salvo em: output/station_availability_level15.png
+2025-04-19 00:25:25,710 - INFO - Gráfico de disponibilidade por estação para level20 salvo em: output/station_availability_level20.png
+2025-04-19 00:25:25,722 - INFO - Relatório salvo em: output/availability_report.csv
+2025-04-19 00:25:25,722 - INFO - Processamento concluído com sucesso!

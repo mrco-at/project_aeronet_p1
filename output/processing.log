@@ -1,0 +1,742 @@
+2025-04-18 23:57:36,200 - ERROR - An error occurred: AeronetDataProcessor.__init__() got an unexpected keyword argument 'data_dir'
+Traceback (most recent call last):
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/main.py", line 40, in main
+    processor = AeronetDataProcessor(
+TypeError: AeronetDataProcessor.__init__() got an unexpected keyword argument 'data_dir'
+2025-04-19 00:15:52,502 - INFO - Starting data processing...
+2025-04-19 00:15:52,503 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl10
+2025-04-19 00:15:52,503 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl15
+2025-04-19 00:15:52,503 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl20
+2025-04-19 00:15:52,503 - INFO - Generating visualizations...
+2025-04-19 00:15:52,714 - ERROR - An error occurred: Dimensions of labels and X must be compatible
+Traceback (most recent call last):
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/main.py", line 73, in main
+    visualizer.plot_station_comparison(availability_data)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/visualizer.py", line 314, in plot_station_comparison
+    plt.boxplot(values, labels=stations)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3075, in boxplot
+    return gca().boxplot(
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4132, in boxplot
+    bxpstats = cbook.boxplot_stats(x, whis=whis, bootstrap=bootstrap,
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/cbook.py", line 1217, in boxplot_stats
+    raise ValueError("Dimensions of labels and X must be compatible")
+ValueError: Dimensions of labels and X must be compatible
+2025-04-19 00:18:58,780 - INFO - Starting data processing...
+2025-04-19 00:18:58,781 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl10
+2025-04-19 00:18:58,781 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl15
+2025-04-19 00:18:58,781 - WARNING - Directory not found: /home/mgodi/Documentos/projeto_aeronet_p1/data/AOD_data_lvl20
+2025-04-19 00:18:58,781 - INFO - Generating visualizations...
+2025-04-19 00:18:59,012 - ERROR - An error occurred: Dimensions of labels and X must be compatible
+Traceback (most recent call last):
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/main.py", line 72, in main
+    visualizer.plot_station_comparison(availability_data)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/visualizer.py", line 314, in plot_station_comparison
+    plt.boxplot(values, labels=stations)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/pyplot.py", line 3075, in boxplot
+    return gca().boxplot(
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/__init__.py", line 1521, in inner
+    return func(
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/_api/deprecation.py", line 295, in wrapper
+    return func(*args, **kwargs)
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/axes/_axes.py", line 4132, in boxplot
+    bxpstats = cbook.boxplot_stats(x, whis=whis, bootstrap=bootstrap,
+  File "/home/mgodi/Documentos/projeto_aeronet_p1/aeronet_env/lib/python3.10/site-packages/matplotlib/cbook.py", line 1217, in boxplot_stats
+    raise ValueError("Dimensions of labels and X must be compatible")
+ValueError: Dimensions of labels and X must be compatible
+2025-04-19 00:22:33,423 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:22:33,518 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:22:33,519 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:22:37,176 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:22:56,070 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:02,726 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:02,935 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:04,733 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:04,864 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:04,982 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:23:05,125 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:39:53,006 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:39:53,076 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:39:53,077 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:39:56,523 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:40:24,696 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:40:24,771 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:40:24,772 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:40:28,284 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:40:40,956 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:41:50,238 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:41:50,324 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:41:50,325 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:41:55,244 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:52:43,149 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:52:43,237 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:52:43,237 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:52:46,233 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:52:57,199 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:01,457 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:01,604 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:03,107 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:03,236 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:03,335 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:03,447 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:13,612 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:13,815 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:16,237 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:16,443 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:16,506 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:16,507 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:53:16,509 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:53:22,657 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:22,770 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:22,774 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 179: invalid continuation byte
+2025-04-19 00:53:22,859 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:29,101 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:31,908 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:32,163 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:32,166 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:53:32,207 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:32,210 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 197: invalid continuation byte
+2025-04-19 00:53:32,241 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:32,275 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:36,936 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:37,514 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:37,852 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:37,885 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:40,274 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:41,181 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:41,246 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:43,903 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:44,141 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:44,183 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:45,785 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:45,808 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:54,756 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:55,824 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:57,052 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:57,106 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:57,108 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:53:57,230 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:57,230 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:53:57,261 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:57,288 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:59,552 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:53:59,656 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:05,830 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:08,567 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:10,003 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:10,004 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:10,757 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:12,229 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:12,279 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:12,283 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 274: invalid continuation byte
+2025-04-19 00:54:16,655 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:16,739 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:16,967 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:23,181 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:23,182 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:24,343 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:24,344 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:24,436 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:25,539 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:25,573 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:28,424 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:31,249 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:31,368 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,470 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,618 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,653 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,676 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,680 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 256: invalid continuation byte
+2025-04-19 00:54:34,722 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:34,723 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:34,751 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:35,009 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:35,879 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:35,916 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:40,548 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:40,682 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:43,739 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:43,802 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:43,803 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:43,931 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:43,932 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:44,247 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,309 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,369 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,402 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,771 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,806 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,861 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:44,862 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:44,975 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:46,455 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,027 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,187 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,247 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,272 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,273 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:54:49,306 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:49,495 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:53,512 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:53,517 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 241: invalid continuation byte
+2025-04-19 00:54:53,520 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 223: invalid continuation byte
+2025-04-19 00:54:53,521 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:54:53,615 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:54,243 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:54,319 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:54,360 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:54,414 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:54:54,416 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:54:54,444 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:00,670 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:01,341 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:04,942 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:04,997 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,029 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,030 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:05,299 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,435 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,465 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,591 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,783 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:05,812 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:06,051 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:06,418 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:07,965 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:08,026 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:08,028 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:08,028 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:10,571 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:10,573 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:11,424 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:11,427 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:11,466 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:11,496 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:12,990 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:13,054 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:14,119 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:14,152 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:16,623 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:16,774 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:20,463 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:20,465 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:20,536 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:24,845 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:29,857 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:30,155 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:30,404 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:30,524 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:30,525 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:32,012 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:32,164 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:32,166 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 00:55:32,197 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:55:32,198 - __main__ - ERROR - Error during processing: AeronetVisualizer.__init__() missing 1 required positional argument: 'output_dir'
+2025-04-19 00:57:57,623 - __main__ - INFO - Processing AERONET data...
+2025-04-19 00:57:57,678 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:57:57,679 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:58:00,829 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:13,453 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:20,264 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:20,628 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:21,825 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:21,954 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:22,049 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:22,148 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:29,873 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:30,085 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:32,574 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:32,794 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:32,856 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:32,858 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:58:32,859 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:58:39,848 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:39,965 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:39,977 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 179: invalid continuation byte
+2025-04-19 00:58:40,054 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:46,025 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:48,473 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:48,717 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:48,718 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:58:48,760 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:48,763 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 197: invalid continuation byte
+2025-04-19 00:58:48,788 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:48,812 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:56,618 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:57,236 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:57,564 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:57,609 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:58:59,898 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:01,146 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:01,213 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:04,652 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:04,939 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:04,996 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:05,099 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:05,189 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:14,976 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:15,711 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:16,328 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:16,365 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:16,366 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:59:16,474 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:16,477 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 00:59:16,559 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:16,635 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:18,896 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:19,002 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:25,325 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:27,724 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:28,907 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:28,910 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:59:29,646 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:31,135 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:31,171 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:31,173 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 274: invalid continuation byte
+2025-04-19 00:59:35,041 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:35,135 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:35,343 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:39,070 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:39,072 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:59:40,133 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:40,136 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:59:40,224 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:41,131 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:41,167 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:43,649 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:46,192 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:46,303 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,064 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,193 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,236 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,256 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,258 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 256: invalid continuation byte
+2025-04-19 00:59:49,299 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,301 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 00:59:49,331 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:49,531 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:50,348 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:50,404 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:54,907 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 00:59:55,048 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,137 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,218 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,218 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:00:00,348 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,349 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:00:00,670 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,731 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,786 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:00,822 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:01,237 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:01,279 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:01,340 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:01,341 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:00:01,484 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:03,855 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:06,719 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:06,868 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:06,923 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:06,959 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:06,960 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:00:06,995 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:07,217 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:09,810 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:09,814 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe3 in position 241: invalid continuation byte
+2025-04-19 01:00:09,817 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'utf-8' codec can't decode byte 0xe1 in position 223: invalid continuation byte
+2025-04-19 01:00:09,820 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:09,915 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:10,604 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:10,669 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:10,706 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:10,764 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:10,765 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:10,798 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:15,285 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:15,877 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,054 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,111 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,144 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,147 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:19,449 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,567 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,601 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,650 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,696 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,729 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:19,921 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:20,360 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:21,659 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:21,728 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:21,729 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:21,731 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:24,274 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:24,275 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:25,265 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:25,266 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:25,315 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:25,366 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:26,028 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:26,134 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:27,117 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:27,161 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:29,367 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:29,534 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:33,786 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:33,788 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:33,850 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:36,690 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:39,817 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:40,020 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:40,213 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:40,310 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:40,310 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:41,222 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:41,342 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:41,345 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:00:41,370 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:00:41,371 - __main__ - ERROR - Error during processing: 'seaborn' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
+2025-04-19 01:03:15,418 - __main__ - INFO - Processing AERONET data...
+2025-04-19 01:03:15,457 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:15,458 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:03:18,489 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:30,457 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:35,209 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:35,366 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:36,843 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:36,964 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:37,050 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:37,153 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:44,603 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:44,783 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:47,118 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:47,294 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:47,353 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:47,355 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:03:47,357 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:03:53,232 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:53,343 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:58,789 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:03:58,903 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:06,244 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:08,949 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:09,243 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:09,249 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:04:09,290 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:24,041 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:24,202 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:24,227 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:30,228 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:30,848 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:31,124 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:31,167 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:33,333 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:34,252 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:34,310 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:36,705 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:36,879 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:36,919 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:36,963 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:36,986 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:44,884 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:45,631 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:46,290 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:46,322 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:46,324 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:04:46,383 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:46,385 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file
+2025-04-19 01:04:46,405 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:46,431 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:48,899 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:49,020 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:04:57,170 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:01,171 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:04,654 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:04,674 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:05:05,330 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:07,214 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:07,258 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:14,596 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:21,889 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:22,303 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:22,646 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:29,866 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:29,955 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:05:31,460 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:31,473 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:05:31,567 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:32,898 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:32,944 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:37,878 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:41,053 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:41,166 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:44,593 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:44,773 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:44,809 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:44,828 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:47,027 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:47,086 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:47,088 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:05:47,117 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:47,433 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:48,549 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:48,584 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:54,492 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:54,672 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:59,519 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:59,796 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:05:59,834 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:06:00,162 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:00,167 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:06:00,522 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:00,582 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:00,645 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:00,684 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:01,319 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:01,394 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:01,491 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:01,496 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:06:01,683 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:03,786 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:06,965 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:07,139 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:07,196 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:07,237 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:07,240 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file
+2025-04-19 01:06:07,268 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:07,460 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:10,009 - data_processor - ERROR - Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:18,099 - data_processor - ERROR - Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:20,331 - data_processor - ERROR - Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:20,367 - data_processor - ERROR - Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:20,439 - data_processor - ERROR - Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:21,243 - data_processor - ERROR - Error processing file Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:21,318 - data_processor - ERROR - Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:21,356 - data_processor - ERROR - Error processing file JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:21,422 - data_processor - ERROR - Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:21,425 - data_processor - ERROR - Error processing file Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:21,465 - data_processor - ERROR - Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:26,723 - data_processor - ERROR - Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:27,392 - data_processor - ERROR - Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:30,681 - data_processor - ERROR - Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:30,742 - data_processor - ERROR - Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:30,777 - data_processor - ERROR - Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:30,778 - data_processor - ERROR - Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:31,039 - data_processor - ERROR - Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,155 - data_processor - ERROR - Error processing file Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,189 - data_processor - ERROR - Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,239 - data_processor - ERROR - Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,303 - data_processor - ERROR - Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,332 - data_processor - ERROR - Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,549 - data_processor - ERROR - Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:31,957 - data_processor - ERROR - Error processing file Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:33,138 - data_processor - ERROR - Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:33,193 - data_processor - ERROR - Error processing file Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:33,194 - data_processor - ERROR - Error processing file Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:33,195 - data_processor - ERROR - Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:35,633 - data_processor - ERROR - Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:35,662 - data_processor - ERROR - Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:36,646 - data_processor - ERROR - Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:36,658 - data_processor - ERROR - Error processing file Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:36,696 - data_processor - ERROR - Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:36,731 - data_processor - ERROR - Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:37,478 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:37,561 - data_processor - ERROR - Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:38,713 - data_processor - ERROR - Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:38,773 - data_processor - ERROR - Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:48,132 - data_processor - ERROR - Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:48,342 - data_processor - ERROR - Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:51,320 - data_processor - ERROR - Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:51,356 - data_processor - ERROR - Error processing file Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:51,393 - data_processor - ERROR - Error processing file Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:54,843 - data_processor - ERROR - Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:57,828 - data_processor - ERROR - Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:58,085 - data_processor - ERROR - Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:58,353 - data_processor - ERROR - Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:58,514 - data_processor - ERROR - Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:58,520 - data_processor - ERROR - Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:59,667 - data_processor - ERROR - Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:59,822 - data_processor - ERROR - Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:59,825 - data_processor - ERROR - Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file
+2025-04-19 01:06:59,851 - data_processor - ERROR - Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:06:59,853 - __main__ - WARNING - Found 162 errors during processing
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,853 - __main__ - WARNING - Error: ('AOD_data_lvl10/Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,854 - __main__ - WARNING - Error: ('AOD_data_lvl10/Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Belterra_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,855 - __main__ - WARNING - Error: ('AOD_data_lvl10/Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Jaru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,856 - __main__ - WARNING - Error: ('AOD_data_lvl10/Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file JamTown_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,857 - __main__ - WARNING - Error: ('AOD_data_lvl10/GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Natal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt', 'Error processing file Jamari_1995-01-01_to_2024-12-31_AOD10_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Alianca_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,858 - __main__ - WARNING - Error: ('AOD_data_lvl10/ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl10/Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl10/Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt', "Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Belterra_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,859 - __main__ - WARNING - Error: ('AOD_data_lvl15/Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Manaus_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Jaru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,860 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,861 - __main__ - WARNING - Error: ('AOD_data_lvl15/Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Santarem_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,862 - __main__ - WARNING - Error: ('AOD_data_lvl15/Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,862 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Jamari_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Alianca_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,863 - __main__ - WARNING - Error: ('AOD_data_lvl15/Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Balbina_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,864 - __main__ - WARNING - Error: ('AOD_data_lvl15/JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file JamTown_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,864 - __main__ - WARNING - Error: ('AOD_data_lvl15/Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,864 - __main__ - WARNING - Error: ('AOD_data_lvl15/Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file Chapada_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,864 - __main__ - WARNING - Error: ('AOD_data_lvl15/Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Natal_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt', 'Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD15_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,865 - __main__ - WARNING - Error: ('AOD_data_lvl15/CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl15/Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt', "Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD15_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file CUIABA-MIRANDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file SP-EACH_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Park_Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ji_Parana_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Belterra_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Campo_Grande_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,866 - __main__ - WARNING - Error: ('AOD_data_lvl20/JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file JamTown_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,867 - __main__ - WARNING - Error: ('AOD_data_lvl20/Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,867 - __main__ - WARNING - Error: ('AOD_data_lvl20/Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Jamari_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,867 - __main__ - WARNING - Error: ('AOD_data_lvl20/CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file CAMPO_VERDE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Alta_Floresta_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file ATTO-Campina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Rio_Branco_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file GORDO_rest_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Tukurui_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Teles_Peres_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Alta_Floresta_IF_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Natal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ibirapuera_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Uberlandia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Pantanal_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,868 - __main__ - WARNING - Error: ('AOD_data_lvl20/Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Brasilia_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,869 - __main__ - WARNING - Error: ('AOD_data_lvl20/Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Balbina_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,869 - __main__ - WARNING - Error: ('AOD_data_lvl20/Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Itajuba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,869 - __main__ - WARNING - Error: ('AOD_data_lvl20/Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Manaus_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,870 - __main__ - WARNING - Error: ('AOD_data_lvl20/Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Chapada_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,870 - __main__ - WARNING - Error: ('AOD_data_lvl20/Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Repressa_Samuel_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,870 - __main__ - WARNING - Error: ('AOD_data_lvl20/Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Petrolina_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,870 - __main__ - WARNING - Error: ('AOD_data_lvl20/JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file JARU_TOWN_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Manaus_EMBRAPA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Jaru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ariquiums_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Porto_Velho_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ji_Parana_UNIR_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Porto_Nacional_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Potosi_Mine_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Sao_Martinho_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,871 - __main__ - WARNING - Error: ('AOD_data_lvl20/Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Alianca_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Santarem_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Sao_Paulo_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ji_Parana_SE_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file ARM_Manacapuru_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Brasilia_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Jaru_Reserve_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Santarem_SONDA_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Abracos_Hill_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Cuiaba_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt', 'Error processing file Agri_School_1995-01-01_to_2024-12-31_AOD20_all_points.txt: No columns to parse from file')
+2025-04-19 01:06:59,872 - __main__ - WARNING - Error: ('AOD_data_lvl20/Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt', "Error processing file Ji_Parana_UNIR_2_1995-01-01_to_2024-12-31_AOD20_all_points.txt: 'Date(dd:mm:yyyy)'")
+2025-04-19 01:06:59,874 - __main__ - INFO - Generating visualizations...
+2025-04-19 01:06:59,919 - visualizer - ERROR - Error creating availability comparison plot: Could not interpret value `Level` for `x`. An entry with this name does not appear in `data`.
+2025-04-19 01:06:59,919 - __main__ - ERROR - Error during processing: Could not interpret value `Level` for `x`. An entry with this name does not appear in `data`.
