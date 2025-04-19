@@ -25,13 +25,10 @@ class AeronetVisualizer:
         Args:
             output_dir: Directory to save output files
         """
-        self.logger = logging.getLogger(__name__)
         self.output_dir = output_dir
         os.makedirs(output_dir, exist_ok=True)
-        
-        # Set style
-        plt.style.use('default')
-        sns.set_theme(style="whitegrid")
+        plt.style.use('default')  # Use default style instead of seaborn
+        self.logger = logging.getLogger(__name__)
 
     def plot_frequency_distribution(self, city: str, distribution: pd.Series, level: str) -> str:
         """

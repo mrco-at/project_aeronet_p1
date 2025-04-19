@@ -48,13 +48,13 @@ class AeronetDataProcessor:
         availability_data = {}
         
         # Process each quality level directory
-        for level in ['level10', 'level15', 'level20']:
-            level_dir = os.path.join(self.data_dir, level)
+        for level in ['10', '15', '20']:
+            level_dir = f'AOD_data_lvl{level}'
             if not os.path.exists(level_dir):
                 self.logger.warning(f"Directory not found: {level_dir}")
                 continue
                 
-            availability_data[level] = {}
+            availability_data[f'level{level}'] = {}
             
             # Process each station file
             for file_name in os.listdir(level_dir):
@@ -77,7 +77,7 @@ class AeronetDataProcessor:
                     
                     for encoding in encodings:
                         try:
-                            df = pd.read_csv(file_path, skiprows=4, encoding=encoding)
+                            df = pd.read_csv(file_path, skiprows=4, encoding=encoding, low_memory=False)
                             break
                         except UnicodeDecodeError:
                             continue
@@ -105,7 +105,7 @@ class AeronetDataProcessor:
                     availability = (days_with_data / total_days) * 100
                     
                     if availability >= self.min_availability_percentage:
-                        availability_data[level][station_name] = {
+                        availability_data[f'level{level}'][station_name] = {
                             'availability_percentage': availability,
                             'days_with_data': days_with_data,
                             'total_days': total_days,

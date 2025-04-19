@@ -740,3 +740,48 @@ ValueError: Dimensions of labels and X must be compatible
 2025-04-19 01:06:59,874 - __main__ - INFO - Generating visualizations...
 2025-04-19 01:06:59,919 - visualizer - ERROR - Error creating availability comparison plot: Could not interpret value `Level` for `x`. An entry with this name does not appear in `data`.
 2025-04-19 01:06:59,919 - __main__ - ERROR - Error during processing: Could not interpret value `Level` for `x`. An entry with this name does not appear in `data`.
+2025-04-19 01:14:34,433 - __main__ - INFO - Processing AERONET data...
+2025-04-19 01:14:34,433 - data_processor - WARNING - Directory not found: data/level10
+2025-04-19 01:14:34,433 - data_processor - WARNING - Directory not found: data/level15
+2025-04-19 01:14:34,433 - data_processor - WARNING - Directory not found: data/level20
+2025-04-19 01:14:34,436 - __main__ - INFO - Generating visualizations...
+2025-04-19 01:14:34,436 - visualizer - WARNING - No availability data to plot
+2025-04-19 01:14:34,437 - __main__ - INFO - Generated availability comparison plot: None
+2025-04-19 01:14:34,449 - visualizer - INFO - Saved spatial availability map to /home/mgodi/Documentos/projeto_aeronet_p1/output/spatial_availability.html
+2025-04-19 01:14:34,450 - __main__ - INFO - Generated spatial availability plot for level10: None
+2025-04-19 01:14:34,465 - visualizer - INFO - Saved spatial availability map to /home/mgodi/Documentos/projeto_aeronet_p1/output/spatial_availability.html
+2025-04-19 01:14:34,465 - __main__ - INFO - Generated spatial availability plot for level15: None
+2025-04-19 01:14:34,482 - visualizer - INFO - Saved spatial availability map to /home/mgodi/Documentos/projeto_aeronet_p1/output/spatial_availability.html
+2025-04-19 01:14:34,482 - __main__ - INFO - Generated spatial availability plot for level20: None
+2025-04-19 01:14:34,482 - __main__ - INFO - Processing completed successfully
+2025-04-19 01:16:41,656 - __main__ - INFO - Processing AERONET data...
+2025-04-19 01:16:41,695 - data_processor - ERROR - Error processing file AOD_data_lvl10/JARU_TOWN_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:16:41,696 - data_processor - WARNING - Error reading file with utf-8 encoding: No columns to parse from file
+2025-04-19 01:16:41,698 - data_processor - WARNING - Error reading file with latin1 encoding: No columns to parse from file
+2025-04-19 01:16:41,699 - data_processor - WARNING - Error reading file with iso-8859-1 encoding: No columns to parse from file
+2025-04-19 01:16:41,699 - data_processor - ERROR - Error processing file AOD_data_lvl10/Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt: Could not read file with any encoding: AOD_data_lvl10/Agri_School_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 01:16:46,411 - data_processor - ERROR - Error processing file AOD_data_lvl10/Itajuba_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:05,564 - data_processor - ERROR - Error processing file AOD_data_lvl10/Alta_Floresta_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:11,469 - data_processor - ERROR - Error processing file AOD_data_lvl10/Campo_Grande_SONDA_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:11,649 - data_processor - ERROR - Error processing file AOD_data_lvl10/Porto_Nacional_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:12,963 - data_processor - ERROR - Error processing file AOD_data_lvl10/Balbina_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:13,105 - data_processor - ERROR - Error processing file AOD_data_lvl10/Porto_Velho_UNIR_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:13,191 - data_processor - ERROR - Error processing file AOD_data_lvl10/Aguas_Emendadas_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:13,298 - data_processor - ERROR - Error processing file AOD_data_lvl10/Ji_Parana_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:24,285 - data_processor - ERROR - Error processing file AOD_data_lvl10/Sao_Paulo_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:24,669 - data_processor - ERROR - Error processing file AOD_data_lvl10/Jaru_Reserve_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:27,763 - data_processor - ERROR - Error processing file AOD_data_lvl10/Cachoeira_Paulista_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:29,255 - data_processor - ERROR - Error processing file AOD_data_lvl10/Rio_de_Janeiro_UFRJ_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:29,320 - data_processor - ERROR - Error processing file AOD_data_lvl10/Santarem_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:29,322 - data_processor - WARNING - Error reading file with utf-8 encoding: No columns to parse from file
+2025-04-19 01:17:29,323 - data_processor - WARNING - Error reading file with latin1 encoding: No columns to parse from file
+2025-04-19 01:17:29,325 - data_processor - WARNING - Error reading file with iso-8859-1 encoding: No columns to parse from file
+2025-04-19 01:17:29,325 - data_processor - ERROR - Error processing file AOD_data_lvl10/Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt: Could not read file with any encoding: AOD_data_lvl10/Chapada_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 01:17:29,326 - data_processor - WARNING - Error reading file with utf-8 encoding: No columns to parse from file
+2025-04-19 01:17:29,327 - data_processor - WARNING - Error reading file with latin1 encoding: No columns to parse from file
+2025-04-19 01:17:29,327 - data_processor - WARNING - Error reading file with iso-8859-1 encoding: No columns to parse from file
+2025-04-19 01:17:29,327 - data_processor - ERROR - Error processing file AOD_data_lvl10/Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt: Could not read file with any encoding: AOD_data_lvl10/Park_Brasilia_1995-01-01_to_2024-12-31_AOD10_all_points.txt
+2025-04-19 01:17:42,667 - data_processor - ERROR - Error processing file AOD_data_lvl10/Amazon_ATTO_Tower_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:42,796 - data_processor - ERROR - Error processing file AOD_data_lvl10/Pantanal_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:47,513 - data_processor - ERROR - Error processing file AOD_data_lvl10/SP-EACH_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'
+2025-04-19 01:17:47,723 - data_processor - ERROR - Error processing file AOD_data_lvl10/Manaus_1995-01-01_to_2024-12-31_AOD10_all_points.txt: 'Date(dd:mm:yyyy)'

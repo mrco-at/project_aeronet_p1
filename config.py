@@ -18,13 +18,18 @@ for directory in [DATA_DIR, OUTPUT_DIR, GEOS_DIR]:
     os.makedirs(directory, exist_ok=True)
 
 # Data processing settings
-START_DATE = datetime(2020, 1, 1)
-END_DATE = datetime(2023, 12, 31)
-MIN_AVAILABILITY_PERCENTAGE = 5.0  # Porcentagem mínima de disponibilidade para considerar uma estação
+START_DATE = '2020-01-01'
+END_DATE = '2023-12-31'
+MIN_AVAILABILITY_PERCENTAGE = 5.0
+MIN_DATA_POINTS = 1000  # Minimum number of measurements to consider a day as having reliable data
+ENCODING_SAMPLE_SIZE = 1000  # Number of bytes to sample when detecting file encoding
+CSV_HEADER_ROW = 6  # Row number where the CSV header is located
+REQUIRED_COLUMNS = ['Date(dd:mm:yyyy)', 'Time(hh:mm:ss)', 'AOD_500nm']  # Required columns in the data files
+INVALID_VALUE = -9999  # Value used to indicate invalid or missing data
 
 # Dynamic threshold settings
-THRESHOLD_MULTIPLIER = 1.5  # Multiplicador para o limiar dinâmico
-MIN_MEASUREMENTS_PER_DAY = 8  # Número mínimo de medições por dia
+THRESHOLD_MULTIPLIER = 1.5  # Multiplier for dynamic threshold calculation
+MIN_MEASUREMENTS_PER_DAY = 8  # Minimum number of measurements per day
 
 # Map settings
 BRAZIL_CENTER = [-15.7801, -47.9292]  # Latitude and longitude of Brazil's center
